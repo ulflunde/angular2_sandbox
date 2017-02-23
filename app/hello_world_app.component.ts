@@ -4,9 +4,16 @@
 import {Component, View} from "angular2/core";
 
 @Component({
-    selector: 'my-app'
-})
+        selector : 'mylist',
+        template : '<h2>Name is Harry</h2>'
+/*        directives : [MyComponentDetails]  */
+    })
 
+export class ListComponent{
+
+}
+
+/*
 @View({
     template: '<h2>Hello World !!</h2><div>Your name is : {{name}}</div>'
 })
@@ -14,3 +21,4 @@ import {Component, View} from "angular2/core";
 export class MyHelloWorldClass {
     name = "World";
 }
+*/

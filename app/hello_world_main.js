@@ -11,7 +11,7 @@ System.register(["angular2/platform/browser", "./hello_world_app.component"], fu
                 hello_world_app_component_1 = hello_world_app_component_1_1;
             }],
         execute: function() {
-            browser_1.bootstrap(hello_world_app_component_1.MyHelloWorldClass);
+            browser_1.bootstrap(hello_world_app_component_1.ListComponent);
         }
     }
 });
