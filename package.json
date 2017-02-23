@@ -2,7 +2,7 @@
   "name": "angular2_sandbox",
   "version": "1.0.0",
   "scripts": {
-    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
+    "start": "concurrently \"npm run build:watch\" \"npm run serve\"",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lite": "lite-server",
@@ -10,19 +10,21 @@
     "postinstall": "typings install"
   },
   "license": "ISC",
+  "author": "Ulf Lunde",
   "dependencies": {
     "angular2": "2.0.0-beta.7",
+    "systemjs": "0.19.40",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.1",
     "systemjs": "0.19.22",
     "es6-promise": "^3.0.2",
     "es6-shim": "^0.33.3",
-    "reflect-metadata": "0.1.2",
-    "rxjs": "5.0.0-beta.2",
-    "zone.js": "0.5.15"
+    "zone.js": "^0.7.4"
   },
   "devDependencies": {
-    "concurrently": "^2.0.0",
-    "lite-server": "^2.1.0",
-    "typescript": "^1.7.5",
+    "concurrently": "^3.2.0",
+    "lite-server": "^2.2.2",
+    "typescript": "~2.0.10",
     "typings":"^0.6.8"
   }
 }
