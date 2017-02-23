@@ -20,13 +20,14 @@ System.register(["angular2/core"], function(exports_1, context_1) {
         execute: function() {
             MyHelloWorldClass = (function () {
                 function MyHelloWorldClass() {
+                    this.name = "World";
                 }
                 MyHelloWorldClass = __decorate([
                     core_1.Component({
                         selector: 'my-app'
                     }),
                     core_1.View({
-                        template: '<h2>Hello World !!</h2>'
+                        template: '<h2>Hello World !!</h2><div>Your name is : {{name}}</div>'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], MyHelloWorldClass);
