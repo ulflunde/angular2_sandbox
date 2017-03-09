@@ -13,8 +13,7 @@
         System.config({
             transpiler: 'typescript',
             typescriptOptions: { emitDecoratorMetadata: true },
-            packages: {'app': {defaultExtension: 'ts'}},
-            map: { 'app': './angular2/src/app' }
+            packages: {'app': {defaultExtension: 'ts'}}
         });
         System.import('app/hello_world_main')
             .then(null, console.error.bind(console));
